@@ -3,6 +3,6 @@ modules:
     enabled:
         - \Helper\Api
         - REST:
-             url: http://localhost/test-install
+             url: http://localhost/test-install/api/index.php
              depends: PhpBrowser
              part: Json
