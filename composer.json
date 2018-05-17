@@ -1,0 +1,22 @@
+{
+  "name": "joomla/test-api",
+  "type": "project",
+  "description": "Joomla CMS API tests",
+  "keywords": ["joomla", "cms"],
+  "homepage": "https://github.com/joomla/joomla-cms",
+  "license": "GPL-2.0+",
+  "config": {
+	"platform": {
+	  "php": "7.0.0"
+	}
+  },
+  "support": {
+	"issues":"https://issues.joomla.org",
+	"forum":"http://forum.joomla.org/",
+	"docs":"https://docs.joomla.org"
+  },
+  "require": {
+	"php": ">=7.0.0",
+	"codeception/codeception": "~2.3"
+  }
+}
