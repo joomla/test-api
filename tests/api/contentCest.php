@@ -24,7 +24,7 @@ class contentCest
 	 */
 	public function getSingleArticleStatus200(ApiTester $I)
 	{
-		$I->amHttpAuthenticated('admin', '123');
+		$I->amHttpAuthenticated('admin', 'admin');
 		$I->haveHttpHeader('Content-Type', 'application/vnd.api+json');
 		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
 		$I->sendGET('/article/1');
