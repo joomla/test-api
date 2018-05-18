@@ -86,4 +86,6 @@ chmod 755 libraries/vendor/joomla-projects/selenium-server-standalone/bin/webdri
 cp libraries/vendor/joomla/test-system/src/acceptance.suite.dist.yml libraries/vendor/joomla/test-system/src/acceptance.suite.yml
 libraries/vendor/bin/robo run:install
 
+# Setting up api tests
+cp libraries/vendor/joomla/test-api/codeception.yml codeception.yml
 libraries/vendor/bin/codecept run

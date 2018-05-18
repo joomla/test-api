@@ -1,9 +1,9 @@
 paths:
-    tests: tests
-    output: tests/_output
-    data: tests/_data
-    support: tests/_support
-    envs: tests/_envs
+    tests: libraries/vendor/joomla/test-api/tests
+    output: libraries/vendor/joomla/test-api/tests/_output
+    data: libraries/vendor/joomla/test-api/tests/_data
+    support: libraries/vendor/joomla/test-api/tests/_support
+    envs: libraries/vendor/joomla/test-api/tests/_envs
 actor_suffix: Tester
 extensions:
     enabled:
