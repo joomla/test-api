@@ -19,8 +19,6 @@ class basicCest
 	 * Test logging in with wrong credentials
 	 *
 	 * @param ApiTester $I
-	 *
-	 * @skip  Currently turns 200 only with  the correct error message
 	 */
 	public function testWrongCredentials(ApiTester $I)
 	{
@@ -47,8 +45,6 @@ class basicCest
 	 * Test not found Resources return 404
 	 *
 	 * @param ApiTester $I
-	 *
-	 * @skip Currently returns 200 and only the error message contains the correct code (404)
 	 */
 	public function testRouteNotFound(ApiTester $I)
 	{
