@@ -88,4 +88,4 @@ libraries/vendor/bin/robo run:install
 
 # Setting up api tests
 cp libraries/vendor/joomla/test-api/codeception.yml codeception.yml
-libraries/vendor/bin/codecept run
+libraries/vendor/bin/codecept run api
