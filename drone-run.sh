@@ -10,20 +10,19 @@ HEADER=$(cat <<'EOF'
 #            JJ:::::::JJ                                                       l:::::l
 #              J:::::J   ooooooooooo     ooooooooooo      mmmmmmm    mmmmmmm    l::::l   aaaaaaaaaaaaa
 #              J:::::J oo:::::::::::oo oo:::::::::::oo  mm:::::::m  m:::::::mm  l::::l   a::::::::::::a
-#              J:::::Jo:::::::::::::::o:::::::::::::::om::::::::::mm::::::::::m l::::l   aaaaaaaaa:::::a
+#              J:::::Jo:::::::::::::::o:::::::::::::::om::::::::::mmatias:::::m l::::l   aaaaaaaaa:::::a
 #              J:::::jo:::::ooooo:::::o:::::ooooo:::::om::::::::::::::::::::::m l::::l            a::::a
 #              J:::::Jo::::o     o::::o::::o     o::::om:::::mmm::::::mmm:::::m l::::l     aaaaaaa:::::a
-#  JJJJJJJ     J:::::Jo::::o     o::::o::::o     o::::om::::m   m::::m   m::::m l::::l   aa::::::::::::a
+#  JJJJJJJ     J:::::Jo::::o     o::::o::::o     o::::om::::m   m::::m   m::::m l::::l   aallon:::::::a
 #  J:::::J     J:::::Jo::::o     o::::o::::o     o::::om::::m   m::::m   m::::m l::::l  a::::aaaa::::::a
 #  J::::::J   J::::::Jo::::o     o::::o::::o     o::::om::::m   m::::m   m::::m l::::l a::::a    a:::::a
 #  J:::::::JJJ:::::::Jo:::::ooooo:::::o:::::ooooo:::::om::::m   m::::m   m::::ml::::::la::::a    a:::::a
 #   JJ:::::::::::::JJ o:::::::::::::::o:::::::::::::::om::::m   m::::m   m::::ml::::::la:::::aaaa::::::a
-#     JJ:::::::::JJ    oo:::::::::::oo oo:::::::::::oo m::::m   m::::m   m::::ml::::::l a::::::::::aa:::a
+#     JJ:::::::::JJ    oo:::::::::::oo oo:::::::::::oo m::::m   m::::m   m::::ml::::::l andrei::::aa:::a
 #       JJJJJJJJJ        ooooooooooo     ooooooooooo   mmmmmm   mmmmmm   mmmmmmllllllll  aaaaaaaaaa  aaaa
 #
 #
-#
-#
+
 #                 AAA                                    iiii
 #                A:::A                                  i::::i
 #               A:::::A                                  iiii
@@ -38,7 +37,7 @@ HEADER=$(cat <<'EOF'
 #      A:::::AAAAAAAAAAAAA:::::A    p:::::p    p::::::p i::::i
 #     A:::::A             A:::::A   p:::::ppppp:::::::pi::::::i
 #    A:::::A               A:::::A  p::::::::::::::::p i::::::i
-#   A:::::A                 A:::::A p::::::::::::::pp  i::::::i
+#   A:::::A                 A:::::A Puneet::::::::pp  i::::::i
 #  AAAAAAA                   AAAAAAAp::::::pppppppp    iiiiiiii
 #                                   p:::::p
 #                                   p:::::p
@@ -47,8 +46,7 @@ HEADER=$(cat <<'EOF'
 #                                  p:::::::p
 #                                  ppppppppp
 #
-#
-#
+
 #  TTTTTTTTTTTTTTTTTTTTTTTEEEEEEEEEEEEEEEEEEEEEE   SSSSSSSSSSSSSSS TTTTTTTTTTTTTTTTTTTTTTTIIIIIIIIIINNNNNNNN        NNNNNNNN        GGGGGGGGGGGGG
 #  T:::::::::::::::::::::TE::::::::::::::::::::E SS:::::::::::::::ST:::::::::::::::::::::TI::::::::IN:::::::N       N::::::N     GGG::::::::::::G
 #  T:::::::::::::::::::::TE::::::::::::::::::::ES:::::SSSSSS::::::ST:::::::::::::::::::::TI::::::::IN::::::::N      N::::::N   GG:::::::::::::::G
@@ -62,8 +60,8 @@ HEADER=$(cat <<'EOF'
 #          T:::::T          E:::::E                         S:::::S        T:::::T          I::::I  N::::::N    N::::::::::NG:::::G        G::::G
 #          T:::::T          E:::::E       EEEEEE            S:::::S        T:::::T          I::::I  N::::::N     N:::::::::N G:::::G       G::::G
 #        TT:::::::TT      EE::::::EEEEEEEE:::::ESSSSSSS     S:::::S      TT:::::::TT      II::::::IIN::::::N      N::::::::N  G:::::GGGGGGGG::::G
-#        T:::::::::T      E::::::::::::::::::::ES::::::SSSSSS:::::S      T:::::::::T      I::::::::IN::::::N       N:::::::N   GGeorge::::::::::G
-#        T:::::::::T      E::::::::::::::::::::ES:::::::::::::::SS       T:::::::::T      I::::::::IN::::::N        N::::::N     GGG::::::GGG:::G
+#        T:::::::::T      E::::::::::::::::::::ES::::::SSSSSS:::::S      Tobias::::T      I::::::::IN::::::N       Niels:::N   GGeorge::::::::::G
+#        T:::::::::T      E::::::::::::::::::::ESandra::::::::::SS       T:::::::::T      I::::::::IN::::::N        N::::::N     GGG::::::GGG:::G
 #        TTTTTTTTTTT      EEEEEEEEEEEEEEEEEEEEEE SSSSSSSSSSSSSSS         TTTTTTTTTTT      IIIIIIIIIINNNNNNNN         NNNNNNN        GGGGGG   GGGG
 #
 #
