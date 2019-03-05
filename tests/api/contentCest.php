@@ -26,7 +26,7 @@ class contentCest
 		$I->haveHttpHeader('Content-Type', 'application/json');
 		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
 		$I->sendPOST('/article', ['title' => 'Just for you', 'catid' => 1, 'articletext' => 'A dummy article to save to the database', 'metakey' => '', 'metadesc' => '', 'language' => '*', 'alias' => 'tobias']);
-		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::CREATED);
+		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
 
 		$I->amHttpAuthenticated('admin', 'admin');
 		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
