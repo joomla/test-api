@@ -15,21 +15,33 @@ class contentCest
 	{
 	}
 
-	// tests
-
 	/**
 	 * Test if you get an single article from the API
 	 *
 	 * @param ApiTester $I
-	 *	
-	 * @skip  Currently turns 200 only with  the correct error message	
 	 */
-	public function getSingleArticleStatus200(ApiTester $I)
+	public function testCrudOnArticle(ApiTester $I)
 	{
 		$I->amHttpAuthenticated('admin', 'admin');
-		$I->haveHttpHeader('Content-Type', 'application/vnd.api+json');
+		$I->haveHttpHeader('Content-Type', 'application/json');
+		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
+		$I->sendPOST('/article', ['title' => 'Just for you', 'catid' => 1, 'articletext' => 'A dummy article to save to the database', 'metakey' => '', 'metadesc' => '', 'language' => '*', 'alias' => 'tobias']);
+		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::CREATED);
+
+		$I->amHttpAuthenticated('admin', 'admin');
 		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
 		$I->sendGET('/article/1');
+		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
+
+		$I->amHttpAuthenticated('admin', 'admin');
+		$I->haveHttpHeader('Content-Type', 'application/json');
+		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
+		$I->sendGET('/article/1', ['title' => 'Another Title']);
+		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
+
+		$I->amHttpAuthenticated('admin', 'admin');
+		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
+		$I->sendDELETE('/article/1');
 		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
 	}
 }
