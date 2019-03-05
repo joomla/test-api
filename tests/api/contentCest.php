@@ -42,6 +42,6 @@ class contentCest
 		$I->amHttpAuthenticated('admin', 'admin');
 		$I->haveHttpHeader('Accept', 'application/vnd.api+json');
 		$I->sendDELETE('/article/1');
-		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
+		$I->seeResponseCodeIs(\Codeception\Util\HttpCode::NO_CONTENT);
 	}
 }
