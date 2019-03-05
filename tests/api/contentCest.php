@@ -16,9 +16,11 @@ class contentCest
 	}
 
 	/**
-	 * Test if you get an single article from the API
+	 * Test the crud endpoints of com_content from the API
 	 *
 	 * @param ApiTester $I
+	 *
+	 * @TODO: Make these separate tests but requires sample data being installed so there are existing articles
 	 */
 	public function testCrudOnArticle(ApiTester $I)
 	{
